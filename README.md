@@ -1,1 +1,2 @@
 # MR-Visistor-Tracker
+I am neither a PHP developer nor a Wordpress expert. I just needed one simple plugin that will give me information about ther users who visits to my site. There are a lot of options in the plugin directory of Wordpress but it seems to featureful but I needed a simple one. So I made one for myself and it is pretty basic one. It just keeps the records of the visiting users in the database and shows in the admin page. Anyone can improve it if he wants. 
