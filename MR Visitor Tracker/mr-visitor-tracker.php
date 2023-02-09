@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Visitor Tracker
+Plugin Name: MR Visitor Tracker
 Description: Keep track of visitor information, such as IP address, user agent, and time of visit.
 Version: 1.0
 Author: Munshi H M Rayhan
