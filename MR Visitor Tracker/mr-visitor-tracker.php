@@ -35,7 +35,10 @@ register_deactivation_hook( __FILE__, 'visitor_tracker_uninstall' );
 
 
 function visitor_tracker_track() {
-    global $wpdb;
+    if(current_user_can('administrator')){
+        //we don't want to track administrators
+    }else{
+        global $wpdb;
     $table_name = $wpdb->prefix . 'visitor_tracker';
     $ip = $_SERVER['REMOTE_ADDR'];
     $user_agent = $_SERVER['HTTP_USER_AGENT'];
@@ -54,6 +57,8 @@ function visitor_tracker_track() {
             'server_time' => $server_time, 
         ) 
     );
+    }
+    
 }
 add_action( 'wp_footer', 'visitor_tracker_track' );
 
